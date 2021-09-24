@@ -1,0 +1,762 @@
+/* ==========
+Global Style
+========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#home {
+    background: url(../img/intro.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#about {
+    background: #DAECE6; 
+}
+
+#works {
+    background: #79B4B7;
+}
+
+#exp-perso {
+    background: #DAECE6; 
+}
+
+#hobbies {
+    background: #80B5BC; 
+}
+
+#portfolio {
+    background: #DAECE6; 
+}
+
+#contact {
+    background: #4C8087;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* font-family: 'Birthstone', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Poiret One', cursive; */
+
+
+/* ==========
+Typography
+========== */
+
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4em;
+    text-align: left;
+    color: white;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5em;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #0075AC;
+}
+
+
+/* .active {
+    color: #0075AC;
+} */
+
+
+
+/* ==========
+Layout Nav
+========== */
+
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
+nav ul {
+    text-align: right;
+    border-bottom: 2px black solid;
+}
+
+nav li {
+    margin-right: 10px;
+    transition: all 0.1s linear;
+}
+
+nav h2 {
+    font-size: 2em;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0 0 10%;
+    font-family: 'Indie Flower', cursive;
+    transition: all 0.1s linear;
+}
+
+nav h3 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0 45px;
+    margin: 65px 0 0 10%;
+    color: #0075AC;
+    font-weight: bolder;
+    transition: all 0.1s linear;
+    font-family: 'Amatic SC', cursive;
+}
+
+nav h2, nav h3 {
+    position: absolute;
+}
+
+@media (min-width: 900px) {
+    nav li {
+        display: inline-block;
+        line-height: 80px;
+        margin-right: 50px;
+    }
+
+    nav h2 {
+        margin: 7.5px 0 0 10%;
+    }
+
+    nav h3 {
+        margin: 42.5px 0 0 10%;
+    }
+}
+
+
+
+/* ==========
+Layout Home
+========== */
+
+
+#home {
+    width:80%;
+	height:100%; 
+    margin: auto;
+    margin-top: 130px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border: solid grey 3px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    transition: all 0.1s linear;
+}
+
+#home h1 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#home h2 {
+    padding-top: 0px;
+    padding-bottom: 130px;
+    text-align: center;
+    color: white;
+    font-size: 2.4em;
+}
+
+.cta {
+    width: 200px;
+    height: 40px;
+    background: #004E64;
+    border-radius: 60px;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 30px;
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s linear;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+}
+
+.wrapper-home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1000px) {
+    .cta {
+        width: 270px;
+        height: 52.5px;
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .cta {
+        width: 300px;
+        height: 60px;
+        font-size: 1.6em;
+        line-height: 60px;
+    }
+
+    #home h1 {
+        font-size: 6em;
+    }
+
+    #home h2 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1600px) {
+    #home {
+        width:60%;
+    }
+
+    .cta {
+        width: 350px;
+        height: 70px;
+        font-size: 1.8em;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .cta {
+        width: 400px;
+        height: 80px;
+        font-size: 2em;
+        line-height: 80px;
+    }
+}
+
+
+
+/* ==========
+Layout About
+========== */
+
+
+#about {
+    width:100%;
+	height:100%;
+    /* background: url(../img/background-wave.jpg) no-repeat center center;
+    background-size: cover; */
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+#about h2 {
+    text-align: left;
+    margin-left: 50px;
+    color: black;
+}
+
+.presentation {
+    margin: 40px 5% 40px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.presentation h3 {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.presentation p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.border {
+    width: 80%;
+    margin: 3% auto 0;
+    position: relative;
+    border-bottom: black 2px solid;
+}
+
+.competences {
+    background: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    border-radius: 30px;
+    margin: 50px auto 5%;
+    padding: 20px 0;
+}
+
+.competences img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.competences p {
+    color: black;
+    text-align: left;
+}
+
+.competences li {
+    display: block;
+}
+
+.competences h3 {
+    margin: 0;
+    padding: 0;
+} 
+
+.competences:hover {
+    transform: scale(1.0);
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+    color: #fff;
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 30px;
+}
+
+.competences:hover .hidden {
+    visibility: visible;
+    opacity: 1;
+}
+
+.autres p {
+    margin: 6% 5% 0;
+}
+
+.valign {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hidden p {
+    margin: 0 5% 5%;
+}
+
+@media (min-width: 800px) {
+
+    .competences {
+        width: 40%;
+        margin: 100px auto 0;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .competences {
+        width: 20%;
+    }
+
+    .presentation {
+        width: 41%;
+        margin: 40px auto 40px;
+    }
+}
+
+
+
+
+
+
+
+/* ==========
+Layout Works
+========== */
+
+
+#works {
+    width:100%;
+	height:100%;
+    /* background: url(../img/background-shape.jpg) no-repeat center center fixed;
+    background-size: cover; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#works h2 {
+    color: white;
+    margin-left: 50px;
+}
+
+.row {
+    background: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    margin: 0 auto 3%;
+    border-radius: 30px;
+    padding: 30px;
+    transition: all 0.1s linear;
+}
+
+.row li {
+    display: block;
+    margin: auto;
+}
+
+.row img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+}
+
+
+.cv-button {
+    margin-top: 50px;
+}
+
+@media(min-width: 800px) {
+    .row {
+        width: 40%;
+    }
+    
+}
+
+@media(min-width: 1400px) {
+    .row {
+        width: 25%;
+    }
+    
+}
+
+
+
+/* ==========
+Layout Exp Perso
+========== */
+
+
+#exp-perso {
+    width:100%;
+	height:100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#exp-perso h2 {
+    color: black;
+    margin-left: 50px;
+}
+
+.exp {
+    background: rgba(255, 255, 255, 0.6);
+    width: 94%;
+    margin: 0 auto 3%;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.exp li {
+    display: block;
+}
+
+.exp img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.exp p {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 800px) {
+    .exp {
+        width: 45%;
+    }
+}
+
+
+/* ==========
+Layout Hobbies
+========== */
+
+
+#hobbies {
+    width:100%;
+	height:100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#hobbies h2 {
+    color: white;
+    margin-left: 50px;
+}
+
+.passions {
+    background: rgba(255, 255, 255, 0.7);
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    margin: 50px auto 5%;
+    transition: all 0.1s linear;
+}
+
+.valign i {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6em;
+    transition: all 0.1s linear;
+}
+
+.passions p {
+    color: black;
+    text-align: center;
+}
+
+.hidden-hobbies {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+    color: #fff;
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 100%;
+}
+
+
+@media (min-width: 900px) {
+
+    .passions {
+        width: 330px;
+        height: 330px;
+    }
+
+    .valign i {
+        font-size: 10em;
+    }
+
+    .passions:hover {
+        transform: scale(1.0);
+    }
+    
+    .hidden-hobbies p {
+        margin: 0 20% 5%;
+    }
+    
+    .passions:hover .hidden-hobbies {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* ==========
+Layout Portfolio
+========== */
+
+
+#portfolio {
+    width:100%;
+	height:100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#portfolio h2 {
+    color: black;
+    margin-left: 50px;
+}
+
+.site {
+    background: rgba(255, 255, 255, 0.6);
+    width: 85%;
+    margin: 0 auto 6%;
+    text-decoration: none;
+    color: black;
+    transition: all 0.1s linear;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.site:hover {
+    transform: scale(1.1);
+}
+
+.img_description {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 200px;
+    color: black;
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 30px;
+}
+
+.site:hover .img_description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.site li {
+    display: block;
+    margin: auto;
+}
+
+.site img {
+    height: 250px;
+    display: block;
+    margin: auto;
+    padding: 30px 0;
+}
+
+@media (min-width: 800px) {
+    .site {
+        width: 40%;
+    }
+}
+
+
+
+/* ==========
+Layout Contact
+========== */
+
+
+#contact {
+    width:100%;
+	height:100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#contact h2 {
+    color: white;
+    margin-left: 50px;
+}
+
+form {
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    padding: 50px;
+    margin: auto;
+    font-family: 'Signika', sans-serif;
+    border-radius: 30px;
+    transition: all 0.1s linear;
+}
+
+label p {
+    font-size: 1em;
+    text-align: left;
+    width: 110px;
+    padding: 0;
+    margin: 0 0 25px 50px;
+}
+
+input {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background-color: #e1e9e7;
+    padding: 0 20px;
+    margin: 0px 0 50px 50px;
+    border-radius: 20px;
+    transition: all 0.1s linear;
+}
+
+textarea {
+    width: 230px;
+    height: 250px;
+    margin-top: 50px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: #e1e9e7;
+    padding: 20px 20px;
+    border-radius: 20px;
+    transition: all 0.1s linear;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-top: 40px;
+    margin-left: 100px;
+    background-color: #79B4B7;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Signika', sans-serif;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    form {
+        width: 600px;
+    }
+
+    input {
+    width: 300px;
+    }
+
+    textarea {
+        width: 460px;
+    }
+    button {
+        margin-top: 40px;
+        margin-left: 250px;
+    }
+}
