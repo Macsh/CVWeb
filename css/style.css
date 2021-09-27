@@ -705,6 +705,8 @@ input {
     margin: 0px 0 50px 50px;
     border-radius: 20px;
     transition: all 0.1s linear;
+    font-size: 1em;
+    font-family: 'Signika', sans-serif;
 }
 
 textarea {
@@ -718,6 +720,8 @@ textarea {
     padding: 20px 20px;
     border-radius: 20px;
     transition: all 0.1s linear;
+    font-size: 1em;
+    font-family: 'Signika', sans-serif;
 }
 
 button {
