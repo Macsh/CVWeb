@@ -102,9 +102,10 @@ Layout Nav
 
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0px;
     width: 100%;
+    min-width: 430px;
     z-index: 2;
     background-color: white;
 }
@@ -115,7 +116,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 5%;
+    margin-right: 2%;
     transition: all 0.1s linear;
 }
 
@@ -167,14 +168,14 @@ Layout Home
 
 #home {
     width:80%;
+    min-width: 400px;
 	height:100%; 
-    margin: auto;
-    margin-top: 130px;
+    display: block;
+    margin: 20px auto 30px;
     padding-top: 3rem;
     padding-bottom: 2rem;
     border: solid grey 3px;
     border-radius: 100px;
-    margin-bottom: 30px;
     transition: all 0.1s linear;
 }
 
