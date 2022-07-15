@@ -6,6 +6,21 @@ Global
     padding-top: 30px;
 }
 
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: #0075AC;
+}
+
 /* ==========
 General Typography
 ========== */
@@ -72,10 +87,7 @@ nav h2 {
     color: #0075AC;
 }
 
-@media (min-width: 900px) {
-    .nav-link {
-        border-top: none;
-    }
+@media (min-width: 992px) {
     .navbar-brand {
         margin-left: 50px;
     }
@@ -239,7 +251,7 @@ Layout Portfolio
 }
 
 .portfolio-section img {
-    height: 150px;
+    height: 120px;
     display: block;
     margin: auto;
 }
@@ -273,6 +285,11 @@ Layout Portfolio
         width: 25%;
         margin: 20px auto;
     }
+
+    .portfolio-section img {
+        height: 150px;
+    }
+    
 }
 
 /* ==========
@@ -425,6 +442,7 @@ label {
 }
 
 input, textarea {
+    max-width: 100%;
     display: block;
     padding: 20px;
     border-width: thin;
@@ -465,7 +483,7 @@ textarea:focus, input:focus{
     cursor: pointer;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
     form {
         width: 700px;
     }

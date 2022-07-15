@@ -1,5 +1,6 @@
 let editorIntro = document.getElementById('editor-intro');
 let changingText = document.getElementById('changing-intro');
+let topButton = document.getElementById('back-to-top');
 let differentIntros = ['<?php echo "Salut !"?>', 'console.log("Bonjour !")', 'SELECT * FROM welcome;', '<h1>Bienvenue ici !</h1>'];
 let i = 0;
 let j = 0;
@@ -110,3 +111,17 @@ function changeIntro() {
     };
 }
 changeIntro();
+
+window.onscroll = function () {
+    if ((window.matchMedia("(max-width: 991px)").matches) && (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350)) {
+        topButton.style.display = "block";
+    }
+    else {
+        topButton.style.display = "none";
+    }
+}
+
+topButton.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
