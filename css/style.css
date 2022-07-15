@@ -27,7 +27,7 @@ General Typography
 
 
 h1 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700;
     color: #0075AC;
     transition: all 0.1s linear;
@@ -62,16 +62,12 @@ Layout Nav
 ========== */
 
 nav h2 {
-    font-size: 1.3em;
+    font-size: 1.15em;
     text-align: left;
     font-weight: bold;
     margin: 10px 0 0 0;
     font-family: 'Indie Flower', cursive;
     transition: all 0.1s linear;
-}
-
-.navbar-brand {
-    margin-left: 20px;
 }
 
 .nav-link {
@@ -85,6 +81,20 @@ nav h2 {
 
 .nav-link:hover {
     color: #0075AC;
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.1em;
+    }
+
+    nav h2 {
+        font-size: 1.3em;
+    }
+    
+    .navbar-brand {
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -114,7 +124,7 @@ Layout Home
 
 #changing-intro {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0 5%;
 }
 
@@ -139,7 +149,25 @@ Layout Home
     transform: scale(1.1);
 }
 
-@media (min-width: 281px) {
+@media (min-width: 300px) {
+    .home-buttons {
+        width: 130px;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 320px) {
+    .home-buttons {
+        width: 140px;
+        font-size: 0.88em;
+    }
+}
+
+@media (min-width: 360px) {
+    #changing-intro {
+        font-size: 1.5em;
+    }
+
     .home-buttons {
         width: 160px;
         font-size: 1em;
