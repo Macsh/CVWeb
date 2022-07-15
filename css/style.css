@@ -1,592 +1,218 @@
 /* ==========
-Global Style
+Global
 ========== */
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+.site-section {
+    padding-top: 30px;
 }
-
-#home {
-    background: url(../img/intro.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-#about {
-    background: #DAECE6; 
-}
-
-#works {
-    background: #79B4B7;
-}
-
-#exp-perso {
-    background: #DAECE6; 
-}
-
-#hobbies {
-    background: #80B5BC; 
-}
-
-#portfolio {
-    background: #DAECE6; 
-}
-
-#contact {
-    background: #4C8087;
-}
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 
 /* ==========
-Typography
+General Typography
 ========== */
 
 
 h1 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 4em;
-    text-align: left;
-    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #0075AC;
+    transition: all 0.1s linear;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 4em;
-    margin-bottom: 2%;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 h3 {
-    font-family: 'Poiret One', cursive;
-    font-size: 2em;
+    font-family: 'Signika', cursive;
     text-align: center;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #0075AC;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Signika', sans-serif;
     text-align: center;
 }
-
-nav a {
-    text-decoration: none;
-    font-family: 'Signika', sans-serif;
-    font-size: 1.5em;
-    color: rgb(68, 68, 68);
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #0075AC;
-}
-
-
-/* .active {
-    color: #0075AC;
-} */
-
 
 
 /* ==========
 Layout Nav
 ========== */
 
-
-nav {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    min-width: 430px;
-    z-index: 2;
-    background-color: white;
-}
-
-nav ul {
-    text-align: right;
-    border-bottom: 2px black solid;
-}
-
-nav li {
-    margin-right: 2%;
-    transition: all 0.1s linear;
-}
-
 nav h2 {
-    font-size: 2em;
+    font-size: 1.3em;
     text-align: left;
-    padding: 0;
-    margin: 20px 0 0 5%;
+    font-weight: bold;
+    margin: 10px 0 0 0;
     font-family: 'Indie Flower', cursive;
     transition: all 0.1s linear;
 }
 
-nav h3 {
-    font-size: 1.5em;
-    text-align: left;
-    padding: 0 45px;
-    margin: 65px 0 0 5%;
-    color: #0075AC;
-    font-weight: bolder;
-    transition: all 0.1s linear;
-    font-family: 'Amatic SC', cursive;
+.navbar-brand {
+    margin-left: 20px;
 }
 
-nav h2, nav h3 {
-    position: absolute;
+.nav-link {
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3em;
+    color: rgb(105, 105, 105);
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #0075AC;
 }
 
 @media (min-width: 900px) {
-    nav li {
-        display: inline-block;
-        line-height: 80px;
-        margin-right: 50px;
+    .nav-link {
+        border-top: none;
     }
-
-    nav h2 {
-        margin: 7.5px 0 0 10%;
-    }
-
-    nav h3 {
-        margin: 42.5px 0 0 10%;
+    .navbar-brand {
+        margin-left: 50px;
     }
 }
-
-
 
 /* ==========
 Layout Home
 ========== */
 
 #home {
-    width:80%;
-    min-width: 400px;
-	height:100%; 
-    display: block;
-    margin: 20px auto 30px;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    border: solid grey 3px;
-    border-radius: 100px;
+    height: 250px;
+    border: solid grey 1px;
     transition: all 0.1s linear;
+    background: rgb(51, 51, 51);
+    background-size:cover;
 }
 
-#home h1 {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-#home h2 {
-    padding-top: 0px;
-    padding-bottom: 130px;
-    text-align: center;
+#editor-intro {
+    font-size: 1.5em;
     color: white;
-    font-size: 2.4em;
+    padding-left: 10px;
+    border-bottom: rgba(255, 255, 255, 0.281) 1px solid;
 }
 
-.cta {
-    width: 200px;
-    height: 40px;
+#changing-intro {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 5%;
+}
+
+.home-buttons {
+    width: 120px;
+    height: 53px;
     background: #004E64;
     border-radius: 60px;
-    font-size: 1em;
+    font-size: 0.7em;
     padding: 10px;
     text-align: center;
-    line-height: 40px;
-    margin: 0 auto 30px;
+    line-height: 33px;
+    margin: 0 auto;
     font-family: 'Signika', sans-serif;
     text-decoration: none;
     color: white;
     transition: all 0.1s linear;
 }
 
-.cta:hover {
+.home-buttons:hover {
+    color: white;
     transform: scale(1.1);
 }
 
-.wrapper-home {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 1000px) {
-    .cta {
-        width: 270px;
-        height: 52.5px;
-        font-size: 1.4em;
-        line-height: 50px;
+@media (min-width: 281px) {
+    .home-buttons {
+        width: 160px;
+        font-size: 1em;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 720px) {
 
-    .cta {
-        width: 300px;
-        height: 60px;
-        font-size: 1.6em;
-        line-height: 60px;
-    }
-
-    #home h1 {
-        font-size: 6em;
-    }
-
-    #home h2 {
-        font-size: 4em;
+    .home-buttons {
+        width: 200px;
+        font-size: 1.2em;
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 992px) {
     #home {
-        width:60%;
+        height: 300px;
+        margin: 25px auto;
     }
 
-    .cta {
-        width: 350px;
-        height: 70px;
+    #changing-intro {
+        color: white;
         font-size: 1.8em;
-        line-height: 70px;
+    }
+
+    .home-buttons {
+        width: 300px;
+        font-size: 1.4em;
     }
 }
-
-@media (min-width: 1800px) {
-    .cta {
-        width: 400px;
-        height: 80px;
-        font-size: 2em;
-        line-height: 80px;
-    }
-}
-
-
 
 /* ==========
 Layout About
 ========== */
 
-
-#about {
-    width:100%;
-	height:100%;
-    /* background: url(../img/background-wave.jpg) no-repeat center center;
-    background-size: cover; */
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+.about-section {
+    margin: 20px 0;
 }
 
-#about h2 {
-    text-align: left;
-    margin-left: 50px;
-    color: black;
-}
-
-.presentation {
-    margin: 40px 5% 40px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.presentation h3 {
-    margin-bottom: 50px;
-    text-align: left;
-}
-
-.presentation p {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.border {
-    width: 80%;
-    margin: 3% auto 0;
-    position: relative;
-    border-bottom: black 2px solid;
-}
-
-.competences {
-    background: rgba(255, 255, 255, 0.7);
-    width: 90%;
-    border-radius: 30px;
-    margin: 50px auto 5%;
-    padding: 20px 0;
-}
-
-.competences img {
-    height: 200px;
-    display: block;
-    margin: auto;
-    padding: 20px 0;
-}
-
-.competences p {
-    color: black;
-    text-align: left;
-}
-
-.competences li {
-    display: block;
-}
-
-.competences h3 {
-    margin: 0;
-    padding: 0;
-} 
-
-.competences:hover {
-    transform: scale(1.0);
-}
-
-.hidden {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 0px;
-    color: #fff;
-    background-color: rgba(211, 211, 211, 0.7);
-    border-radius: 30px;
-}
-
-.competences:hover .hidden {
-    visibility: visible;
-    opacity: 1;
-}
-
-.autres p {
-    margin: 6% 5% 0;
-}
-
-.valign {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.hidden p {
-    margin: 0 5% 5%;
-}
-
-@media (min-width: 800px) {
-
-    .competences {
-        width: 40%;
-        margin: 100px auto 0;
-    }
-}
-
-@media (min-width: 1400px) {
-
-    .competences {
-        width: 20%;
-    }
-
-    .presentation {
-        width: 41%;
-        margin: 40px auto 40px;
-    }
-}
-
-
-
-
-
-
-
-/* ==========
-Layout Works
-========== */
-
-
-#works {
-    width:100%;
-	height:100%;
-    /* background: url(../img/background-shape.jpg) no-repeat center center fixed;
-    background-size: cover; */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#works h2 {
-    color: white;
-    margin-left: 50px;
-}
-
-.row {
-    background: rgba(255, 255, 255, 0.5);
-    width: 80%;
-    margin: 0 auto 3%;
-    border-radius: 30px;
-    padding: 30px;
-    transition: all 0.1s linear;
-}
-
-.row li {
-    display: block;
-    margin: auto;
-}
-
-.row img {
-    height: 150px;
-    display: block;
-    margin: auto;
-    padding: 15px 0;
-}
-
-
-.cv-button {
-    margin-top: 50px;
-}
-
-@media(min-width: 800px) {
-    .row {
-        width: 40%;
-    }
-    
-}
-
-@media(min-width: 1400px) {
-    .row {
-        width: 25%;
-    }
-    
-}
-
-
-
-/* ==========
-Layout Exp Perso
-========== */
-
-
-#exp-perso {
-    width:100%;
-	height:100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#exp-perso h2 {
-    color: black;
-    margin-left: 50px;
-}
-
-.exp {
-    background: rgba(255, 255, 255, 0.6);
-    width: 94%;
-    margin: 0 auto 3%;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-.exp li {
-    display: block;
-}
-
-.exp img {
-    height: 200px;
-    display: block;
-    margin: auto;
-    padding: 30px 0;
-}
-
-.exp p {
-    margin-bottom: 10px;
-}
-
-@media (min-width: 800px) {
-    .exp {
-        width: 45%;
-    }
-}
-
-
-/* ==========
-Layout Hobbies
-========== */
-
-
-#hobbies {
-    width:100%;
-	height:100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#hobbies h2 {
-    color: white;
-    margin-left: 50px;
-}
-
-.passions {
-    background: rgba(255, 255, 255, 0.7);
-    width: 230px;
-    height: 230px;
+#about-profile-pic {
+    width: 208px;
+    height: 208px;
+    margin: 0 auto;
     border-radius: 100%;
-    margin: 50px auto 5%;
-    transition: all 0.1s linear;
+    border: black 1px solid;
+    background: url(../assets/Photo_Profil.jpg) no-repeat center center;
+    background-size: cover;
 }
 
-.valign i {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 6em;
-    transition: all 0.1s linear;
+#about-quote {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(41, 136, 41);
 }
 
-.passions p {
+.about-presentation {
+    margin: 20px 2% 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.about-presentation p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.about-socials {
+    width: 50%;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.about-socials a:hover{
+    opacity: 70%;
+}
+
+.github {
     color: black;
-    text-align: center;
 }
 
-.hidden-hobbies {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 0px;
-    color: #fff;
-    background-color: rgba(211, 211, 211, 0.7);
-    border-radius: 100%;
-}
-
-
-@media (min-width: 900px) {
-
-    .passions {
-        width: 330px;
-        height: 330px;
-    }
-
-    .valign i {
-        font-size: 10em;
-    }
-
-    .passions:hover {
-        transform: scale(1.0);
-    }
-    
-    .hidden-hobbies p {
-        margin: 0 20% 5%;
-    }
-    
-    .passions:hover .hidden-hobbies {
-        visibility: visible;
-        opacity: 1;
+@media (min-width: 992px) {
+    #about-profile-pic {
+        width: 250px;
+        height: 250px;
+        margin: 30px 40px;
     }
 }
 
@@ -594,32 +220,28 @@ Layout Hobbies
 Layout Portfolio
 ========== */
 
-
-#portfolio {
-    width:100%;
-	height:100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#portfolio h2 {
-    color: black;
-    margin-left: 50px;
-}
-
-.site {
-    background: rgba(255, 255, 255, 0.6);
-    width: 85%;
-    margin: 0 auto 6%;
+.portfolio-section {
+    width: 80%;
+    margin: 20px auto;
     text-decoration: none;
     color: black;
     transition: all 0.1s linear;
-    border-radius: 30px;
-    padding: 30px;
 }
 
-.site:hover {
+.portfolio-section p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.portfolio-section:hover {
     transform: scale(1.1);
+    color: black;
+}
+
+.portfolio-section img {
+    height: 150px;
+    display: block;
+    margin: auto;
 }
 
 .img_description {
@@ -629,134 +251,226 @@ Layout Portfolio
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 200px;
+    margin:0;
+    padding-top: 100px;
     color: black;
-    background-color: rgba(204, 204, 204, 0.5);
-    border-radius: 30px;
+    background-color: rgba(219, 219, 219, 0.6);
+    border-radius: 10px;
 }
 
-.site:hover .img_description {
+.img_description p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.portfolio-section:hover .img_description {
     visibility: visible;
     opacity: 1;
 }
 
-.site li {
+@media (min-width: 992px) {
+    .portfolio-section {
+        width: 25%;
+        margin: 20px auto;
+    }
+}
+
+/* ==========
+Layout Skills
+========== */
+
+.skills-logos img {
+    width: 40%;
+    height: auto;
     display: block;
     margin: auto;
 }
 
-.site img {
-    height: 250px;
+.skills-logos-four img {
+    width: 50%;
+    height: auto;
     display: block;
     margin: auto;
-    padding: 30px 0;
 }
 
-@media (min-width: 800px) {
-    .site {
+.skills-big-section {
+    width: 90%;
+    margin: auto;
+}
+
+.skills-section {
+    background: rgb(253, 253, 253);
+    padding-top: 10px;
+    border: 0.5px rgba(41, 41, 41, 0.5) solid;
+    border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+    .skills-big-section {
         width: 40%;
+        margin: 20px auto;
     }
 }
 
 
+/* ==========
+Layout Works
+========== */
+
+.works-section {
+    width: 80%;
+    margin: 20px auto 10px;
+    transition: all 0.1s linear;
+}
+
+.works-section p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.works-section img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    padding: 15px 0;
+}
+
+@media(min-width: 800px) {
+    .works-section {
+        width: 40%;
+    }
+}
+
+@media(min-width: 1400px) {
+    .works-section {
+        width: 35%;
+    }
+}
+
+/* ==========
+Layout Exp Perso
+========== */
+
+.personal_exp-section {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.personal_exp-section p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (min-width: 800px) {
+    .personal_exp-section {
+        width: 45%;
+    }
+}
+
+
+/* ==========
+Layout Hobbies
+========== */
+
+.hobbies-section {
+    width: 80%;
+    margin: 20px auto 10px;
+    transition: all 0.1s linear;
+}
+
+.hobbies-hobby p {
+    width: 80%;
+    text-align: justify;
+}
+
+.hobbies-hobby i{
+    display:inline-block;
+    margin: 2px auto;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: bottom;
+    color: #0075AC;
+}
 
 /* ==========
 Layout Contact
 ========== */
 
-
 #contact {
-    width:100%;
-	height:100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#contact h2 {
-    color: white;
-    margin-left: 50px;
+    padding-bottom: 30px;
 }
 
 form {
-    background-color: white;
-    width: 300px;
+    background: rgb(253, 253, 253);
+    border: 0.5px rgba(41, 41, 41, 0.5) solid;
+    width: 80%;
     height: 100%;
-    padding: 50px;
-    margin: auto;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 5px;
     font-family: 'Signika', sans-serif;
-    border-radius: 30px;
     transition: all 0.1s linear;
 }
 
-label p {
+label {
+    max-width: 80%;
     font-size: 1em;
     text-align: left;
-    width: 110px;
-    padding: 0;
-    margin: 0 0 25px 50px;
+    margin: auto;
+}
+
+input, textarea {
+    display: block;
+    padding: 20px;
+    border-width: thin;
+    border-radius: 3px;
+    transition: all 0.1s linear;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 10px 0;
 }
 
 input {
-    width: 150px;
     height: 50px;
-    line-height: 50px;
-    display: block;
-    background-color: #e1e9e7;
-    padding: 0 20px;
-    margin: 0px 0 50px 50px;
-    border-radius: 20px;
-    transition: all 0.1s linear;
-    font-size: 1em;
-    font-family: 'Signika', sans-serif;
 }
 
 textarea {
-    width: 230px;
-    height: 250px;
-    margin-top: 50px;
-    display: block;
-    margin: auto;
-    padding: 20px;
-    background-color: #e1e9e7;
-    padding: 20px 20px;
-    border-radius: 20px;
-    transition: all 0.1s linear;
-    font-size: 1em;
-    font-family: 'Signika', sans-serif;
+    min-height: 250px;
 }
 
-button {
+textarea:focus, input:focus{
+    outline: 1px solid black;
+}
+
+#contact button {
     width: 100px;
     height: 50px;
     display: block;
-    margin-top: 40px;
-    margin-left: 100px;
-    background-color: #79B4B7;
+    margin: 30px auto 0;
+    background-color: #004E64;
     color: white;
-    border-radius: 20px;
+    border: black 1px solid;
+    border-radius: 30px;
     font-family: 'Signika', sans-serif;
     transition: all 0.1s ease;
 }
 
-button:hover {
+#contact button:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
 @media (min-width: 800px) {
     form {
-        width: 600px;
+        width: 700px;
     }
 
-    input {
-    width: 300px;
-    }
-
-    textarea {
+    input, textarea {
         width: 460px;
-    }
-    button {
-        margin-top: 40px;
-        margin-left: 250px;
     }
 }
