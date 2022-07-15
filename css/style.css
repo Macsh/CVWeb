@@ -292,7 +292,7 @@ Layout Portfolio
     left: 0;
     right: 0;
     margin:0;
-    padding-top: 100px;
+    padding-top: 85px;
     color: black;
     background-color: rgba(219, 219, 219, 0.6);
     border-radius: 10px;
@@ -463,22 +463,24 @@ form {
 }
 
 label {
-    max-width: 80%;
     font-size: 1em;
     text-align: left;
-    margin: auto;
 }
 
 input, textarea {
-    max-width: 100%;
     display: block;
-    padding: 20px;
+    padding: 10px 15px;
     border-width: thin;
     border-radius: 3px;
     transition: all 0.1s linear;
     font-size: 1em;
     font-weight: 300;
-    margin: 10px 0;
+}
+
+label, input, textarea {
+    width: 90%;
+    max-width: inherit;
+    margin: 5px auto;
 }
 
 input {
@@ -486,7 +488,7 @@ input {
 }
 
 textarea {
-    min-height: 250px;
+    min-height: 150px;
 }
 
 textarea:focus, input:focus{
@@ -513,10 +515,21 @@ textarea:focus, input:focus{
 
 @media (min-width: 720px) {
     form {
+        width: 600px;
+    }
+
+    input, textarea, label {
+        margin: 5px auto;
+        width: 460px;
+    }
+}
+
+@media (min-width: 992px) {
+    form {
         width: 700px;
     }
 
-    input, textarea {
-        width: 460px;
+    textarea {
+        min-height: 200px;
     }
 }
